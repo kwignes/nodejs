@@ -11,6 +11,8 @@ app.use(express.static(__dirname + '/public'));
 
 // Set default template engine to "ejs"
 app.engine('html', require('ejs').renderFile);
+// views is directory for all template files
+app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
 app.get('/', function(req, res){
