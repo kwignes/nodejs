@@ -67,7 +67,7 @@ img {
 
 /* Header */
 header {
-  background: url(../images/.jpg);
+  background: #F8F8F8;
   background-position: center;
   background-size: cover;
   padding: 8em 0 6.5em 0;
@@ -286,10 +286,11 @@ section {
 }
 
 section h2 {
-  font-size: 36px;
+  font-size: 18px;
   color: #333;
   font-weight: 700;
   text-align: left;
+  margin-top: 1em;
 }
 
 /* Featured Works */
@@ -336,13 +337,13 @@ section h2 {
 }
 
 .gallery {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 
 #portfolio h2 {
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 
