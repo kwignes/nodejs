@@ -146,6 +146,10 @@ nav li {
   padding-right: 50px;
 }
 
+nav li:last-child {
+  padding-right: 20px;
+}
+
 nav a {
   color: #666;
   display: inline-block;
@@ -175,6 +179,10 @@ nav a#pull {
 
         @media screen and (max-width: 800px) {
 
+          header {
+            padding: 5em 0 4em 0;
+        }   
+
         .container-nav {
             max-width: 69.4%;
             margin: 0 auto;
@@ -195,6 +203,10 @@ nav a#pull {
             float: left;
             position: relative;
             border-bottom: 1px solid #CCC;
+          }
+
+        nav li {
+             padding-right: 0;
           }
           nav a {
               text-align: left;
@@ -346,8 +358,6 @@ section h2 {
   font-size: 18px;
 }
 
-
-
         /* Portfolio media queries */
         @media only screen and (max-width: 1220px) {
           .images img {
@@ -368,13 +378,23 @@ section h2 {
 /* Works Page */
 
 .works {
-  width: calc((100% - 30px * 3) / 2);
-  margin-right: 15px;
+  width: 48%;
   float: left;
-  border: 1px solid #ccc;
-  padding: 10px;
   margin-bottom: 1em;
   background: #fff;
+  position: relative;
+  margin-right: 2%;
+}
+
+.works img {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+}
+
+.works p {
+  line-height: 30px;
+  margin-top: 1em;
 }
 
 .works img:hover,
@@ -386,7 +406,7 @@ section h2 {
 
         @media only screen and (max-width: 720px) {
           .works {
-          width: calc((100% - 30px * 2) / 1);  
+          width: 100%;  
           }
         }
 
