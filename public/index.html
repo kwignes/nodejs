@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Kris Wignes | Front-End Developer</title>
+	<title>Kris Wignes | Front-End Developer | Vancouver, BC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Kris Wignes is a Web Developer from Vancouver, BC. This is his portfolio where you can view some of his projects and skills.">
     <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,7 +28,6 @@
     	    <div class="logo"><a href="index.html">KW</a></div>
 		        <ul class="clearfix">
 		            <li><a class="active" href="index.html">Home</a></li>
-		            <li><a href="works.html">Works</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="contact.html">Contact</a></li>
 		        </ul>
@@ -39,13 +39,13 @@
 <header>
     <div class="container">
 		<div class="page-title">
-			<h1>Kris <span class="semi">W</span>ignes</h1>
+			<h1>Kris Wignes</h1>
 				<h2>Front-end Developer</h2>
-				<p>I am a Vancouver-based web developer who creates <span class="semi">clean and modern</span> content for the web.<br> This site showcases some of my recent design work.</p>
+				<p>I am a Vancouver-based web developer who creates <span class="bold">clean and modern</span> content for the web.</p>
 					<div class='row'>
-						<a href="https://ca.linkedin.com/in/kristopherwignes" target="_blank"><i class='icon-linkedin'></i></a>
-						<a href="https://twitter.com/KrisWignes" target="_blank"><i class='icon-twitter'></i></a>
-						<a href="https://github.com/kwignes" target="_blank"><i class='icon-github'></i></a>
+						<a class="button" href="https://ca.linkedin.com/in/kristopherwignes" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+						<a class="button" href="https://twitter.com/KrisWignes" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+						<a class="button" href="https://github.com/kwignes" target="_blank"><i class="fa fa-github-alt"></i> GitHub</a>
 					</div>
 		</div>
 	</div>
@@ -58,21 +58,25 @@
 			<!-- image 01 --> 
 			<div class="images">
 				<a href="http://kwignes.htpwebdesign.ca/javascript-tutorials/" target="_blank"><img src="images/js-tutorials.png" alt="JavaScript Tutorials"></a>
-				<p class="heading">JavaScript Tutorials</p><p> A JavaScript tutorial website that demonstrates Node.js, Express, and AJAX through examples.</p>
-				<p><a class="button" href="http://kwignes.htpwebdesign.ca/javascript-tutorials/" target="_blank">View Live</a></p> 
+				<p class="heading">JavaScript Tutorials</p><p> A JavaScript tutorial website that demonstrates Node.js and AJAX through examples. I used NPM to install dependencies that were coded in a package.json file. A server.js file was used to require Express and handle request and response exchanges for static files.</p>
+				<p>Tools:</p> <p>Node.js, NPM<br>Express Framework<br>Heroku Cloud Platform, Git<br>HTML5, CSS3, AJAX, JavaScript, jQuery, JSON, XML, PHP</p>
+				<p><a class="button" href="http://kwignes.htpwebdesign.ca/javascript-tutorials/" target="_blank">View Live</a></p>  
 			</div> 
 			<!-- image 02 --> 
 			<div class="images">
-				<a href="http://kwignes.htpwebdesign.ca/responsive-blog/" target="_blank"><img src="images/computer-devices.jpg" alt="Computer Devices"></a>		   
-  				<p class="heading">Responsive Blog Project</p><p>A responsive blog page with max-width media queries. I focused on flexibility so that it is adaptable to any current or future device.</p>
-  				<p><a class="button" href="http://kwignes.htpwebdesign.ca/responsive-blog/" target="_blank">View Live</a></p> 
-			</div>
-			<!-- image 03 --> 
+				<a href="http://kwignes.htpwebdesign.ca/responsive-blog/" target="_blank"><img src="images/blog.png" alt="Computer Devices"></a>		   
+  				<p class="heading">Responsive Blog Project</p><p>A responsive blog page with max-width media queries. I focused on flexibility so that it is adaptable to any current or future device.</p> <p>Images are set to a max-width of 100% and auto height. As the page shrinks, the sidebar eases in until it changes to 100% at 710 pixels.</p> <p>The responsive nav is hidden until 767 pixels, then displayed as inline. jQuery uses the class, .show, to transition ease the nav ul height.</p>
+  				<p>Tools:</p> <p>HTML5, CSS3<br>JavaScript, jQuery</p>
+  				<p><a class="button" href="http://kwignes.htpwebdesign.ca/responsive-blog/" target="_blank">View Live</a></p>  
+			</div>			
+			<!-- image 03 -->
 			<div class="images">
-				<a href="http://kwignes.htpwebdesign.ca/session_login/index.php" target="_blank"><img src="images/iphone.jpg" alt="Iphone Mobile"></a>
-				<p class="heading">Secure Session PHP &amp; MySQL</p><p>A PHP and MySQL database table administration interface that includes a secure login/logout form.</p> 
+				<a href="http://kwignes.htpwebdesign.ca/session_login/index.php" target="_blank"><img src="images/secure-login.png" alt="Secure Login Form"></a>
+				<p class="heading">Secure Session PHP &amp; MySQL</p>
+				<p>A PHP and MySQL database table administration interface that includes a secure login/logout form with session timeouts for security. The user is able to add, delete or edit student entries. The Update and Delete links send record-specific information via a GET query string to acknowledge which student was clicked on.</p><p>View project code here: <a href="https://github.com/kwignes/secure-session-login" target="_blank">GitHub</a>
+				<p>Tools:</p> <p>HTML5, CSS3<br>PHP, phpMyAdmin<br>MySQL</p>
 				<p><a class="button" href="http://kwignes.htpwebdesign.ca/session_login/index.php" target="_blank">View Live</a></p> 
-			</div> 
+			</div> 					    
 		</div>
 </section>
 

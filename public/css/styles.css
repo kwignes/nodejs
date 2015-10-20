@@ -3,10 +3,10 @@
 
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  color: #555;
-  background-color: #FDFDFD;
+  color: #C0C0C0;
+  background-color: #fff;
 }
 
 
@@ -17,14 +17,15 @@ p {
 
 a {
   text-decoration: none;
-  color: #20A182;
+  color: #555;
+  font-weight: bold;
   transition: color 300ms ease-out 0s;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #555;
+  color: #222;
 }
 
 ul li {
@@ -49,7 +50,7 @@ img {
 }
 
 .semi {
-  color: #20A182;
+  color: #aeaeae;
 }
 
 .heading {
@@ -57,7 +58,11 @@ img {
 }
 
 .vancouver {
-  margin: 4em 0;
+  margin-bottom: 2em;
+  width: 300px;
+}
+figure {
+  margin-top: 3em;
 }
 
 .active {
@@ -67,10 +72,10 @@ img {
 
 /* Header */
 header {
-  background: #F8F8F8;
+  background: #222;
   background-position: center;
   background-size: cover;
-  padding: 8em 0 6.5em 0;
+  padding: 10em 0 6em 0;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -83,13 +88,12 @@ header {
 header h1 {
   font-size: 48px;
   font-weight: 400;
-  letter-spacing: 3px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1em;
   margin-top: 0px;
   margin-bottom: 0px;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   position: relative;
   right:2px;
 }
@@ -99,13 +103,42 @@ header h2 {
   letter-spacing: 4px;
   font-size: 36px;
   line-height: 1;
-  color: #AEAEAE;
+  color: #aeaeae;
   font-family: 'Montserrat', sans-serif;
   padding: 10px 0;
   position: relative;
   right:2px;
 }
 
+header p {
+  color: #aeaeae;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+header .button {
+  background: #222;
+  border: 1px solid #9AD959;
+  color: #aeaeae;
+  margin-left: .8em;
+  font-weight: normal;
+}
+
+header .button:first-child {
+   margin-left: 0; 
+}
+
+header .button:hover {
+   border: 1px solid #fff;
+  color: #fff;
+ background: none;
+}
+
+.button .fa {
+  position: relative;
+  top: -1px;
+  margin-right: 8px;
+}
 
 /* Clearfix */
 .clearfix:before,
@@ -123,15 +156,15 @@ header h2 {
 
 /* Navigation */
 nav {
-  height: 55px;
+  height: 70px;
   width: 100%;
-  background: #EEE;
   position: fixed;
   top: 0;
   border-bottom: 1px solid #DDD;
   position: fixed;
   left: 0px;
-  z-index: 99999;     
+  z-index: 99999;  
+  background: #fff;   
   }
 
 nav ul {
@@ -155,14 +188,16 @@ nav a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  padding:9px 0;
+  padding:15px 0;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-  color: #20A182;
+  color: #9AD959;
   transition: .3s ease-out;
 }
 
@@ -197,6 +232,7 @@ nav a#pull {
             display: none;
             height: auto;
             float: none;
+            padding: 10px 0;
         }    
         nav li {
             width: 100%;
@@ -214,7 +250,7 @@ nav a#pull {
               text-indent: 25px;
           }      
           nav a:hover {
-              background:#ccc;
+              background:#eee;
           }
                     
         nav a#pull {
@@ -231,7 +267,7 @@ nav a#pull {
             display: inline-block;
             position: absolute;
             right: 15px;
-            top: 5px;
+            top: 10px;
         }
         .logo {
           display: none;
@@ -246,24 +282,7 @@ nav a#pull {
 
 /* Social media icons */
 .row {
-  background: transparent;
   padding-top: 30px;
-}
-.row i {
-  cursor: pointer;
-  color: #fff;
-  padding: .7em;
-  position: relative;
-  background: #000;
-}
-.row i:hover,
-.row i:focus,
-.row i:active {
-  transition: .3s ease-out;
-  color: #20A182;
-}
-.row a:not(:first-child) {
-  margin-left: .8em;
 }
 
       @media only screen and (max-width: 580px) {
@@ -273,12 +292,25 @@ nav a#pull {
           position: relative;
           margin-top: 0em;
       }
+        header {
+            padding: 5em 0 2em 0;          
+        }
+
         header h1 {
           font-size: 2.5em;
         }
 
         header h2 {
           font-size: 1.3em;
+        }
+      }
+
+      @media only screen and (max-width: 550px) {
+        header .button {
+          display: block;
+          margin-bottom: .8em;
+          margin-left: 0;
+          width: 108px;
         }
       }
 
@@ -307,29 +339,37 @@ section h2 {
 
 /* Featured Works */
 .button {
-  border: 1px solid #eee;
+  border: 1px solid #C0C0C0;
   border-radius: 3px;
   background: #fff;
   color: #555;
   padding: 5px 10px;
   cursor: pointer;
+  font-weight: normal;
 }
 
 .button:hover {
-  background: #f5f5f5;
+  background: #eee;
+  border: 1px solid #555;
   transition: .3s ease-out;
+  color: #000;
 }
 
 .images img {
   border: 1px solid #ccc;
   padding: 10px;
-  width: 50%;
-  float: left;
-  margin-bottom: 1em;
+  background: #fff;
 }
   
 .images{
-  clear: both;
+  width: calc((100% - 10px * 4) / 3);
+  margin-right: 10px;
+  float: left;
+  margin-bottom: 1em;
+}
+
+.images:nth-of-type(3) {
+  margin-right: 0;
 }
 
 .images img:hover,
@@ -339,17 +379,39 @@ section h2 {
   opacity: 0.6;
 }
 
+      @media only screen and (max-width: 1450px) {
+      .images{
+        width: calc((100% - 10px * 3) / 2);
+        }
+        .images:nth-of-type(2) {
+        margin-right: 0;
+      }
+      section,
+      .container,
+      .container-nav {
+          max-width: 80%;  
+        }
+      }
+
+      @media only screen and (max-width: 760px) {
+      .images{
+        width: 100%;
+        }
+        section {
+          max-width: 80%;
+        }
+      }
+
 #portfolio p {
-  padding-left: 20px;
   line-height: 30px; 
-  float: left; 
-  width: 45%;
-  margin-bottom: 1em;
+  margin: 1em 0;
   display: block;
+  padding: 0 10px;
 }
 
 .gallery {
   margin-top: 2em;
+  overflow: auto;
 }
 
 
@@ -357,58 +419,6 @@ section h2 {
   text-align: left;
   font-size: 18px;
 }
-
-        /* Portfolio media queries */
-        @media only screen and (max-width: 1220px) {
-          .images img {
-            width: 100%;
-            float: none;
-          }
-          .images:nth-child(2),
-          .images:nth-child(3) {
-              padding-top: 1.5em;
-          }
-
-          #portfolio p {
-            width: 100%;
-          }
-        }
-
-
-/* Works Page */
-
-.works {
-  width: 48%;
-  float: left;
-  margin-bottom: 1em;
-  background: #fff;
-  position: relative;
-  margin-right: 2%;
-}
-
-.works img {
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: 10px;
-}
-
-.works p {
-  line-height: 30px;
-  margin-top: 1em;
-}
-
-.works img:hover,
-.works img:focus,
-.works img:active {
-  transition: 0.2s ease-out;
-  opacity: 0.6;
-}
-
-        @media only screen and (max-width: 720px) {
-          .works {
-          width: 100%;  
-          }
-        }
 
 #about p {
     margin: 1em 0;
@@ -439,7 +449,7 @@ table td{
 
 /* Footer */
 .site-footer {
-  background: #EEEEEE;
+  background: #F3F2EF;
   background-position: center;
   background-size: cover;
   clear: both;
@@ -447,7 +457,7 @@ table td{
 
 .site-footer p {
   clear: both;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 15px;
   padding: 20px 0;
   text-align: center;
